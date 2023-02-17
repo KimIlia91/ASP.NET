@@ -5,7 +5,7 @@ ASP.NET Core Projects implementations.
 ## The projects use
 
 - [ ] C#
-- [ ] EF Core
+- [ ] EF Core (Code first)
 - [ ] ASP.NET Core Identity
 - [ ] ASP.NET Core MVC
 - [ ] MS SQL
