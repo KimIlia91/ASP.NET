@@ -1,0 +1,52 @@
+﻿@using Microsoft.AspNetCore.Components
+@model IEnumerable<MagicVilla_Web.Models.Dto.VillaDto>
+
+<div style="height:90vh; overflow:hidden; position:relative; padding:0px,0px,58%,0px; background-color:rgba(0,0,0,0.6);">
+    <img src="/images/home/slide1.jpg" style="height:90vh; width:100%; object-fit:cover; position:relative; z-index:-1;" />
+    <div class="col-md-10 text-center" style="position:absolute; top:0; margin:60px; margin-top:200px;">
+            <span class="text-uppercase text-white d-block mb-3">
+                Лучшее место для отдыха
+            </span>
+        <h1 class="text-center" style="font-size:45px; color:aliceblue;">Лукоморье</h1>
+        </div>
+    </div>
+    <div class="row" style="">
+        @foreach (var villa in Model)
+        {
+            <div class="p-4 col-md-12 col-lg-4">
+                <div class="" style="border-radius:20px; border: 1px solid #000000">
+                    <div class="img-container m-2">
+                        <img class="d-block" style="border-radius:20px; max-width:100%;" src="@villa.ImageUrl" alt="First slide">
+                    </div>
+                    <div class="container" style="padding-left:20px;">
+                        <p class="card-title text-warning" style="font-size:xx-large">@villa.Name</p>
+                        <p class="card-text" style="font-size:medium">
+                            @((MarkupString)villa.Details)
+                        </p>
+                    </div>
+                    <div class="container" style="padding-left:20px; padding-top:10px">
+                        <p class="card-text">
+                            <span class="">Max Occupancy : @villa.Occupancy adults </span><br />
+                            <span class=" pt-1">Villa Size : @villa.Sqrt sqrt</span><br />
+                        </p>
+                    </div>
+                    <div class="container" style="padding-left:20px;">
+                        <span class="text-warning font-weight-bold" style="font-size:35px; text-align:center">
+                            <span style="border-bottom:1px solid #ff6a00">
+                                @villa.Rate.ToString("0")
+                            </span>
+                            KGS
+                        </span>
+                    </div>
+                    <div class="container p-3">
+                        <a href="" class="btn btn-success form-control btn-block" style="font-size:xx-large">
+                                Book
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+

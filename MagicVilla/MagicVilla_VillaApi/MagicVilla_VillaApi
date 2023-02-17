@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MagicVilla_VillaApi</name>
+    </assembly>
+    <members>
+        <member name="M:MagicVilla_VillaApi.Controllers.VillaAPIController.GetVillaAsync(System.Int32)">
+            <summary>
+            Return villa by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MagicVillaVillaApi.Migrations.AddVillaTable">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.AddVillaTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.AddVillaTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.AddVillaTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MagicVillaVillaApi.Migrations.SeedVillaTable">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.SeedVillaTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.SeedVillaTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.SeedVillaTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MagicVillaVillaApi.Migrations.SeedVillaTableWithCreateDate">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.SeedVillaTableWithCreateDate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.SeedVillaTableWithCreateDate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.SeedVillaTableWithCreateDate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MagicVillaVillaApi.Migrations.AddVillaNumberTable">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.AddVillaNumberTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.AddVillaNumberTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.AddVillaNumberTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MagicVillaVillaApi.Migrations.AddForeignKeyToVillaTable">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.AddForeignKeyToVillaTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.AddForeignKeyToVillaTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MagicVillaVillaApi.Migrations.AddForeignKeyToVillaTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
