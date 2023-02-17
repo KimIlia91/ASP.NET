@@ -1,0 +1,39 @@
+﻿@model IEnumerable<IdentityRole>
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-primary">Roles list</h2>
+    </div>
+    <div class="col-6 text-end">
+        <a asp-action="Upsert" asp-controller="Roles" class="btn btn-primary">Create new role</a>
+    </div>
+</div>
+<div class="p-4 border rounded">
+    @if (Model.Any())
+    {
+        <table class="table table-striped border">
+            <tr class="table-secondary">
+                <th>Id</th>
+                <th>Name</th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>
+                        <div class="text-end">
+                            <form asp-action="Delete" asp-route-id="@item.Id">
+                                <a asp-action="Upsert" asp-route-id="@item.Id" class="btn btn-info text-white" style="cursor:pointer; 
+                                    width:30%;">Edit</a>
+                            
+                                <button type="submit" onclick="return confirm('Are your sure to delete this?')" 
+                                    class="btn btn-danger text-white" style="width:30%;">Delete</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+</div>

@@ -1,0 +1,73 @@
+﻿@model IEnumerable<ApplicationUser>
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-primary">User list</h2>
+    </div>
+</div>
+<div class="p-4 border rounded">
+        <form asp-controller="User" asp-action="Index">
+            <p>
+                Roles: <input type="text" name="roleFilter" />
+                Name: <input type="text" name="nameFilet" dropzone="all"/>
+                <input type="submit" value="Filter" />
+            </p>            
+        </form>
+        <table class="table table-striped border">
+            <tr class="table-secondary">
+                <th>Email</th>
+                <th>Name</th>
+                <th>Roles</th>
+                <th></th>
+            </tr>
+            @if (Model.Count() > 0)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Email</td>
+                        <td>@item.Name</td>
+                        <td>@item.Role</td>
+                        <td>
+                            <div class="text-end">
+                                <form asp-action="Delete" asp-route-userId="@item.Id">
+                                    <a asp-action="Edit" asp-route-userId="@item.Id" class="btn btn-info text-white" style="cursor:pointer;
+                                        width:15%;">Edit</a>
+                                    <a asp-action="ManageUserClaims" asp-route-userId="@item.Id" class="btn btn-success"
+                                        style="width:15%;">Claims</a>
+
+                                    <button type="submit" onclick="return confirm('Are your sure to delete this?')"
+                                        class="btn btn-danger text-white" style="width:15%;">
+                                        Delete
+                                    </button>
+
+                                    @if (item.LockoutEnd is null || item.LockoutEnd < DateTime.Now)
+                                    {
+                                        //User is not locked, option to locked
+                                        <button asp-action="LockUnlock" asp-route-userId="@item.Id" class="btn btn-primary"
+                                            style="cursor:pointer; width:15%;">
+                                            Lock
+                                        </button>
+                                    }
+                                    else
+                                    {
+                                        //User is locked, option to unlocked
+                                        <button asp-action="LockUnlock" asp-route-userId="@item.Id" class="btn btn-success"
+                                            style="cursor:pointer; width:15%;">
+                                            Unlock
+                                        </button>
+                                    }
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td></td>
+                    <td class="text-center">Not found</td>
+                </tr>
+            }
+        </table>
+</div>

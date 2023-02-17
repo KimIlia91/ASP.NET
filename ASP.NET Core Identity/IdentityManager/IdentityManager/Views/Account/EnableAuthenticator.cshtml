@@ -1,0 +1,32 @@
+﻿@model TwoFactorAuthenticationViewModel
+<div asp-validation-summary="All" class="text-danger"></div>
+<p>
+    Pleace enter the code.
+</p>
+<p>
+    @Model.Token
+</p>
+
+<div>
+    Scan QR code with youe mobeli pdone.
+</div>
+
+<div id="qRCode"></div>
+
+<form method="post">
+    <input asp-for="Token" hidden />
+    <input asp-for="QRCodeURL" hidden />
+    <div>
+        Enter code: <input asp-for="Code" class="form-control" type="text" />
+        <span asp-validation-for="Code" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary" style="margin-top:10px;">Submit</button>
+</form>
+
+@section Scripts{
+    <script src="~/js/qrcode.js"></script>
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qRCode"), "@Model.QRCodeURL");
+    </script>
+    <partial name="_ValidationScriptsPartial" />
+}
