@@ -18,4 +18,4 @@ ASP.NET Core Projects implementations.
 - [ ] [Unit of Work](https://github.com/KimIlia91/ASP.NET/tree/main/BulkyBookV2/BulkyBook.DataAccess/Repository) pattern
 - [ ] [AutoMapping](https://github.com/KimIlia91/ASP.NET/tree/main/MagicVilla)
 - [ ] Bootstrap 5
-- [ ] [JS](https://github.com/KimIlia91/ASP.NET/tree/main/BulkyBookV2/BulkyBookWeb/wwwroot/js) (simple example to work with the tables)
+- [ ] [JS](https://github.com/KimIlia91/ASP.NET/tree/main/BulkyBookV2/BulkyBookWeb/wwwroot/js) (simple table example)
