@@ -8,6 +8,7 @@ ASP.NET Core Projects implementations.
 - [ ] EF Core (Code first)
 - [ ] ASP.NET Core Identity
 - [ ] ASP.NET Core MVC
+- [ ] [RazorPages](https://github.com/KimIlia91/ASP.NET/tree/main/Abby)
 - [ ] MS SQL
 - [ ] [N-tier architecture c#](https://github.com/KimIlia91/ASP.NET/tree/main/BulkyBookV2)
 - [ ] Azure
@@ -16,3 +17,5 @@ ASP.NET Core Projects implementations.
 - [ ] Repository Pattern
 - [ ] [Unit of Work](https://github.com/KimIlia91/ASP.NET/tree/main/BulkyBookV2/BulkyBook.DataAccess/Repository) pattern
 - [ ] [AutoMapping](https://github.com/KimIlia91/ASP.NET/tree/main/MagicVilla)
+- [ ] Bootstrap 5
+- [ ] [JS](https://github.com/KimIlia91/ASP.NET/tree/main/BulkyBookV2/BulkyBookWeb/wwwroot/js) (simple example to work with the tables)
